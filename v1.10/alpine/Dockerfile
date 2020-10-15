@@ -23,6 +23,7 @@ RUN apk update \
  && gem install ext_monitor -v 0.1.2 \
  && gem install fluentd -v 1.10.4 \
  && gem install bigdecimal -v 1.4.4 \
+ && gem install fluent-plugin-cloudwatch-logs -v 0.10.2 \
  && apk del .build-deps \
  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem
 

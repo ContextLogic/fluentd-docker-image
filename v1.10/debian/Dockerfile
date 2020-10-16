@@ -52,6 +52,7 @@ RUN apt-get update \
     fluent-plugin-webhdfs \
     fluent-plugin-grok-parser \
     fluent-plugin-prometheus \
+    fluent-plugin-cloudwatch-logs \
  && gem sources --clear-all \
  && apt-get purge -y --auto-remove \
                   -o APT::AutoRemove::RecommendsImportant=false \

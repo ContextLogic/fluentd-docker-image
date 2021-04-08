@@ -53,6 +53,7 @@ RUN apt-get update \
     fluent-plugin-grok-parser \
     fluent-plugin-prometheus \
     fluent-plugin-cloudwatch-logs \
+    fluent-plugin-aws-elasticsearch-service \
  && gem sources --clear-all \
  && apt-get purge -y --auto-remove \
                   -o APT::AutoRemove::RecommendsImportant=false \
